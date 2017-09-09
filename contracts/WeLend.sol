@@ -25,13 +25,13 @@ contract WeLend {
         desc: desc,
         community: community,
         creator: msg.sender,
-        guarantors: address[](0),
+        guarantors: new address[](0),
         bankApproved: false,
         communityApproved: false,
         funded: false,
         canceled: false,
-        repaid: false,
-        interestRate: bankInterestRate
+    repaid: false,
+    interestRate: bankInterestRate
     });
         loans.push(loan);
         //        loan.amount = amount;
@@ -47,10 +47,12 @@ contract WeLend {
     }
 
     function getUserLoansIndex(address _user) constant returns(uint[]){
-        uint[] data = new uint[](50);
+        uint[] memory data = new uint[](50);
+        uint last = 0;
         for(uint i = 0; i < loans.length;i++){
             if(loans[i].creator == _user ){
-                data.push(i);
+                data[last] = i;
+                last++;
             }
         }
         return data;
