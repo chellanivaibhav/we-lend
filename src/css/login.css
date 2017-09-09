@@ -1,30 +1,83 @@
 body {
 	margin: 0;
-	background: #283593;
+	font-family: 'Roboto Mono', monospace;
+	color: white;
 }
 
 #container {
-	width: 960px;
-	margin: auto;
-	margin-top: 100px;
-}
-
-#cardcontent {
-	background: white;
 	display: flex;
-	height: 600px;
+} 
+
+.left {	
+	width: 40vw;
+	background: #151922;
+	height: 101vh;
 }
 
-#image {
-	position: relative;
-	background: black;
-	max-width: 100%;
-    max-height: 100%;
+.right {
+	background: #00A875;
 	flex-grow: 1;
+
 }
 
-#form {
-	background: red;
-	height: 100%;
-	flex-grow: 1;
+.container70 {
+	margin-top: 40px;
+	padding-top: 100px;
+	width: 70%;
+	margin:auto;
+}
+
+#welcome {
+	
+	font-size: 40pt;
+}
+
+#paragraph {
+	
+	font-size: 13pt;
+}
+
+.buttonsign{
+	font-size: 13pt;
+	background-color: #00A875;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+} 
+
+#formtitle {
+	padding-top: 50px;
+	font-size: 20pt;
+}
+
+.buttonlog{
+	
+	font-size: 13pt;
+	background-color: white;
+    border: none;
+    color: #00A875;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+} 
+
+input[type=text] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
 }

@@ -1,25 +1,66 @@
 <!DOCTYPE html>
-  <html>
-    <head>
-    	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet"> 
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-      <link rel="stylesheet" type="text/css" href="css/login.css">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    </head>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">  
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script> 
 
-    <body>
 
-    
-      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
-      
-      <div id="container">
-        <div id="cardcontent">
-          <div id="image"><img src="images/login/logo.png"></div>
-          <div id="form"></div>
-        </div>
-      </div>     
+	<title>Commugrant Login</title>
+</head>
+<body>
+	<div id="container">
 
-    </body>
-  </html>
+			<div class="left">
+
+				<div class="container70">
+					<img src="images/login/logobig.png" height="100px">	<br><br><br>
+
+					<div id="welcome">WELCOME</div>
+
+					<div id="paragraph">
+						<p>
+							Commungrant is a <strong><em>community-driven collateral free</em></strong>
+							system of acquiring loan which could power your business.
+							We provide a hassle-free solution to your loan grants so that
+							you can acquire loan without worrying about depositing collateral.
+							The platform works on the principle of human to human trust that is 
+							the community backs you. 
+						</p>
+						<p>
+							Commugrant is powered by the blockchain platform which means all your transactions 
+							are transparent yet super secure
+						</p>
+					</div>	
+					<br>
+					<input type="button" class="buttonsign" value="SIGN UP NOW">	
+				</div>
+
+			</div>
+
+			<div class="right">
+
+				<div class="container70">
+
+					<div id="formtitle">Or Login into your account...</div>
+					<br><br><br><br>
+
+					<form>
+						<input type="text" id="fname" name="firstname" placeholder="USERNAME">
+						<input type="text" id="lname" name="lastname" placeholder="PASSWORD">
+					</form>
+
+					<br><br><br><br>
+
+					<input type="button" class="buttonlog" value="LOGIN">
+
+				</div>
+
+			</div>
+		
+
+	</div>	
+
+</body>
+</html>
