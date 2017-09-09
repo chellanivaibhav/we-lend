@@ -1,0 +1,85 @@
+body {
+	margin: 0;
+	font-family: 'Roboto Mono', monospace;
+	color: black;
+}
+
+#upper {
+    height: 10vh;
+    background: #00A875;
+    
+}
+
+#lower {
+    
+    display: flex;
+}
+
+#container70{
+    width: 70%;
+    margin: auto;
+    display: flex;
+}
+
+#left{
+    width: 100%;
+}
+
+#right {
+    flex-grow: 1;
+    padding-top: 10px;
+}
+
+.signout{
+    
+    font-size: 9pt;
+    color: white;
+    background-color: #00A875;
+    border: solid;
+    border-color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+} 
+
+.tagline {
+    color: black;
+    flex-grow: 1;
+    padding-left: 10px;
+    font-size: 15pt;
+}
+
+.container72{
+    padding-top: 50px;
+    width: 40%;
+    margin: auto;
+}
+
+#flex {
+    display: flex;
+}
+
+#lower {
+    background: #151922;
+}
+
+.cards {
+    display: grid;
+    padding: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 60px;
+  align-items: stretch;
+  justify-items: center;
+}
+
+.cards img {
+  border: none;
+  max-width: 100%;
+}
+
+#lower {
+    padding-top: 50px;
+}
