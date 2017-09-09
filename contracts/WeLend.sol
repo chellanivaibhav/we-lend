@@ -1,5 +1,6 @@
 pragma solidity ^0.4.8;
 contract WeLend {
+
     Loan[] loans;
     uint bankInterestRate = 10;
     struct Loan {
@@ -17,10 +18,6 @@ contract WeLend {
     uint interestRate;
     }
 
-    function WeLend(){
-
-    }
-
     function createLoan(uint amount,uint dueBy,string desc,uint community) constant returns(bool){
         Loan memory loan = Loan({
         amount: amount,
@@ -28,13 +25,13 @@ contract WeLend {
         desc: desc,
         community: community,
         creator: msg.sender,
-        guarantors: new address[](0),
-    bankApproved: false,
+        guarantors: address[](0),
+        bankApproved: false,
         communityApproved: false,
         funded: false,
         canceled: false,
-    repaid: false,
-    interestRate: bankInterestRate
+        repaid: false,
+        interestRate: bankInterestRate
     });
         loans.push(loan);
         //        loan.amount = amount;
@@ -50,7 +47,7 @@ contract WeLend {
     }
 
     function getUserLoansIndex(address _user) constant returns(uint[]){
-        uint[] data;
+        uint[] data = new uint[](50);
         for(uint i = 0; i < loans.length;i++){
             if(loans[i].creator == _user ){
                 data.push(i);
