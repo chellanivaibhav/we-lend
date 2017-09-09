@@ -1,7 +1,7 @@
 pragma solidity ^0.4.8;
 contract WeLend {
 
-    Loan[] loans;
+    Loan[] public loans;
     uint bankInterestRate = 10;
     struct Loan {
     address creator;
@@ -30,8 +30,8 @@ contract WeLend {
         communityApproved: false,
         funded: false,
         canceled: false,
-    repaid: false,
-    interestRate: bankInterestRate
+        repaid: false,
+        interestRate: bankInterestRate
     });
         loans.push(loan);
         //        loan.amount = amount;
