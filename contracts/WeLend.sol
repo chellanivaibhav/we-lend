@@ -1,8 +1,9 @@
 pragma solidity ^0.4.8;
 contract WeLend {
 
-    Loan[] public loans;
+    mapping(address => uint) addressMapping;
     uint bankInterestRate = 10;
+    uint curr ;
     struct Loan {
     address creator;
     address[] guarantors;
@@ -17,30 +18,31 @@ contract WeLend {
     bool repaid;
     uint interestRate;
     }
+    Loan[] public loans;
 
-    function createLoan(uint amount,uint dueBy,string desc,uint community) constant returns(bool){
-        Loan memory loan = Loan({
-        amount: amount,
-        dueBy: dueBy,
-        desc: desc,
-        community: community,
-        creator: msg.sender,
-        guarantors: new address[](0),
-        bankApproved: false,
-        communityApproved: false,
-        funded: false,
-        canceled: false,
-        repaid: false,
-        interestRate: bankInterestRate
-    });
-        loans.push(loan);
-        //        loan.amount = amount;
-        //        loan.dueBy = dueBy;
-        //        loan.description = description;
-        //        loan.community = community;
-        //        loan.creator = msg.sender;
-        return true;
+    function WeLend(uint _loans){
+        curr = 0;
+        loans.length = _loans;
     }
+
+    function createUser(address _user,uint _id){
+        addressMapping[_user] = _id;
+    }
+
+    function getUser() constant returns(uint _id){
+        return addressMapping[_user];
+    }
+
+    function createLoan(uint amount,uint dueBy,string desc,uint community){
+        loans[curr].amount =  amount;
+        loans[curr].dueBy= dueBy;
+        loans[curr].desc= desc;
+        loans[curr].community= community;
+        loans[curr].creator= msg.sender;
+        loans[curr].interestRate =  bankInterestRate;
+        curr++;
+    }
+
 
     function getGuarantors(uint _loanid) constant returns(address[]) {
         return loans[_loanid].guarantors;
@@ -58,7 +60,18 @@ contract WeLend {
         return data;
     }
 
-    function getLoanByIndex(uint _index) constant returns(address,address[],uint,string,uint,uint,uint,bool,bool,bool,bool,bool){
+    function getLoanByIndex(uint _index) constant returns(address creator,
+                                                            address[] guarantors,
+                                                            uint community,
+                                                            string desc,
+                                                            uint dueBy,
+                                                            uint amount,
+                                                            uint interestRate,
+                                                            bool bankApproved,
+                                                            bool communityApproved,
+                                                            bool funded,
+                                                            bool canceled,
+                                                            bool repaid){
         Loan storage loan = loans[_index];
         return(loan.creator,
         loan.guarantors,
@@ -73,5 +86,4 @@ contract WeLend {
         loan.canceled,
         loan.repaid);
     }
-
 }
