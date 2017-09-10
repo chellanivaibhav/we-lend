@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f78ec26f-a47e-4e74-86c8-81cf85f247d8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contracts/WeLend.sol" afterPath="$PROJECT_DIR$/contracts/WeLend.sol" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contracts/voting.sol" afterPath="$PROJECT_DIR$/contracts/voting.sol" />
-    </list>
+    <list default="true" id="f78ec26f-a47e-4e74-86c8-81cf85f247d8" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -127,12 +124,12 @@
       <option name="presentableId" value="Default" />
       <updated>1504957603371</updated>
       <workItem from="1504957608507" duration="20244000" />
-      <workItem from="1504988980031" duration="12840000" />
+      <workItem from="1504988980031" duration="12927000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33084000" />
+    <option name="totallyTimeSpent" value="33171000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
