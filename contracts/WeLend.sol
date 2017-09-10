@@ -18,9 +18,9 @@ contract WeLend {
         bool funded;
         bool canceled;
         bool repaid;
+        bool defaulted;
         uint interestRate;
     }
-    event Transfer(address indexed _from, address indexed _to, uint256 _value);
     Loan[] public loans;
 
     function WeLend(uint _loans){
@@ -79,7 +79,8 @@ contract WeLend {
                                                             bool communityApproved,
                                                             bool funded,
                                                             bool canceled,
-                                                            bool repaid){
+                                                            bool repaid,
+                                                            bool defaulted){
         Loan storage loan = loans[_index];
         return(loan.creator,
         loan.guarantors,
@@ -92,7 +93,8 @@ contract WeLend {
         loan.communityApproved,
         loan.funded,
         loan.canceled,
-        loan.repaid);
+        loan.repaid,
+        loan.defaulted);
     }
 
     function getContractBalance() constant returns(uint){
@@ -121,7 +123,6 @@ contract WeLend {
         if (balances[msg.sender] < amount) return false;
         balances[msg.sender] -= amount;
         balances[receiver] += amount;
-        Transfer(msg.sender, receiver, amount);
         return true;
     }
     function getBalanceInEth(address addr) constant returns(uint){
@@ -133,5 +134,18 @@ contract WeLend {
 
     function getSmartContractBalance() constant returns(uint){
         return contractBalance;
+    }
+
+    function getUserRating(address _user) constant returns(uint rating){
+        uint defaultCount = 0;
+        uint[] memory marray = getUserLoansIndex(_user);
+        uint i = 0;
+        while(i < marray.length){
+            if(loans[marray[i]].defaulted){
+                defaultCount++;
+            }
+            i++;
+        }
+        return (marray.length - defaultCount) / marray.length ;
     }
 }
