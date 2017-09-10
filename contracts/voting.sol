@@ -1,19 +1,13 @@
-
 pragma solidity ^0.4.0;
 
-/// @title Voting with delegation.
 contract Ballot {
-    // This declares a new complex type which will
-    // be used for variables later.
-    // It will represent a single voter.
     struct Voter {
         bool voted;  // if true, that person already voted
         uint vote;   // index of the voted proposal
     }
 
     // This is a type for a single proposal.
-    struct Proposal
-    {
+    struct Proposal {
         bytes32 name;   // short name (up to 32 bytes)
         uint voteCount; // number of accumulated votes
     }
@@ -94,8 +88,7 @@ contract Ballot {
     // of the winner contained in the proposals array and then
     // returns the name of the winner
     function winnerName() constant
-            returns (bytes32 winnerName)
-    {
+            returns (bytes32 winnerName){
         winnerName = proposals[winningProposal()].name;
     }
 }

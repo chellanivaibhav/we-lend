@@ -1,36 +1,44 @@
 pragma solidity ^0.4.8;
 contract WeLend {
-
     mapping(address => uint) addressMapping;
+    mapping (address => uint) balances;
+    mapping(uint => address[]) votes;
     uint bankInterestRate = 10;
-    uint curr ;
+    uint curr;
+    uint contractBalance;
     struct Loan {
-    address creator;
-    address[] guarantors;
-    uint community;
-    string desc;
-    uint dueBy;//EPOC TIME
-    uint amount;
-    bool bankApproved;
-    bool communityApproved;
-    bool funded;
-    bool canceled;
-    bool repaid;
-    uint interestRate;
+        address creator;
+        address[] guarantors;
+        uint community;
+        string desc;
+        uint dueBy;//EPOC TIME
+        uint amount;
+        bool bankApproved;
+        bool communityApproved;
+        bool funded;
+        bool canceled;
+        bool repaid;
+        uint interestRate;
     }
+    event Transfer(address indexed _from, address indexed _to, uint256 _value);
     Loan[] public loans;
 
     function WeLend(uint _loans){
         curr = 0;
         loans.length = _loans;
+        balances[tx.origin] = 10000;
     }
 
     function createUser(address _user,uint _id){
         addressMapping[_user] = _id;
     }
 
-    function getUser() constant returns(uint _id){
+    function getUserUUID(address _user) constant returns(uint _id){
         return addressMapping[_user];
+    }
+
+    function getResult(uint _loanid) constant returns(address[] voters){
+        return votes[_loanid];
     }
 
     function createLoan(uint amount,uint dueBy,string desc,uint community){
@@ -85,5 +93,45 @@ contract WeLend {
         loan.funded,
         loan.canceled,
         loan.repaid);
+    }
+
+    function getContractBalance() constant returns(uint){
+        return this.balance;
+    }
+
+    function transferToContract(uint _loanid){
+        Loan storage mloan = loans[_loanid];
+        uint individualAmount = mloan.amount / mloan.guarantors.length ;
+        contractBalance = contractBalance + mloan.amount;
+        for(uint i = 0; i < mloan.guarantors.length;i++){
+            balances[mloan.guarantors[i]] = balances[mloan.guarantors[i]] - individualAmount;
+        }
+    }
+
+    function transferFromContract(uint _loanid){
+        Loan storage mloan = loans[_loanid];
+        uint individualAmount = mloan.amount / mloan.guarantors.length ;
+        contractBalance = contractBalance - mloan.amount;
+        for(uint i = 0; i < mloan.guarantors.length;i++){
+            balances[mloan.guarantors[i]] = balances[mloan.guarantors[i]] + individualAmount;
+        }
+    }
+
+    function sendCoin(address receiver, uint amount) returns(bool sufficient) {
+        if (balances[msg.sender] < amount) return false;
+        balances[msg.sender] -= amount;
+        balances[receiver] += amount;
+        Transfer(msg.sender, receiver, amount);
+        return true;
+    }
+    function getBalanceInEth(address addr) constant returns(uint){
+        return getBalance(addr);
+    }
+    function getBalance(address addr) constant returns(uint) {
+        return balances[addr];
+    }
+
+    function getSmartContractBalance() constant returns(uint){
+        return contractBalance;
     }
 }
