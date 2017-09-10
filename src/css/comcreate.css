@@ -1,28 +1,28 @@
 body {
-	margin: 0;
-	font-family: 'Roboto Mono', monospace;
-	color: white;
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
 }
 
 #upper {
     height: 80vh;
     background: #00A875;
-    
+
 }
 
-#container70{
+#container70 {
     width: 70%;
     margin: auto;
     display: flex;
 }
 
-#container72{
+#container72 {
     width: 50%;
     margin: auto;
     padding-top: 50px;
 }
 
-#left{
+#left {
     width: 100%;
 }
 
@@ -31,8 +31,8 @@ body {
     padding-top: 10px;
 }
 
-.signout{
-    
+.signout {
+
     font-size: 9pt;
     color: white;
     background-color: #00A875;
@@ -44,7 +44,8 @@ body {
     display: inline-block;
     margin: 4px 2px;
     cursor: pointer;
-} 
+}
+
 #lower {
     background: #151922;
     height: 20vh;
@@ -58,9 +59,9 @@ body {
     flex-grow: 1;
 }
 
-#go{
+#go {
     font-size: 60pt;
-    padding-top: 0px;    
+    padding-top: 0px;
     color: red;
     border: solid;
     text-align: center;
@@ -68,7 +69,7 @@ body {
     margin: 0;
     padding: 0 10px;
     cursor: pointer;
-} 
+}
 
 #para {
     font-size: 8pt;

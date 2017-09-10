@@ -2,7 +2,63 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f78ec26f-a47e-4e74-86c8-81cf85f247d8" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bs-config.json" afterPath="$PROJECT_DIR$/bs-config.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contracts/Migrations.sol" afterPath="$PROJECT_DIR$/contracts/Migrations.sol" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contracts/WeLend.sol" afterPath="$PROJECT_DIR$/contracts/WeLend.sol" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contracts/mortal.sol" afterPath="$PROJECT_DIR$/contracts/mortal.sol" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contracts/owned.sol" afterPath="$PROJECT_DIR$/contracts/owned.sol" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contracts/voting.sol" afterPath="$PROJECT_DIR$/contracts/voting.sol" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/migrations/1_initial_migration.js" afterPath="$PROJECT_DIR$/migrations/1_initial_migration.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/allcoms.html" afterPath="$PROJECT_DIR$/src/allcoms.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/comcreate.html" afterPath="$PROJECT_DIR$/src/comcreate.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/allcoms.css" afterPath="$PROJECT_DIR$/src/css/allcoms.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/animate.css" afterPath="$PROJECT_DIR$/src/css/animate.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/bootstrap.min.css.map" afterPath="$PROJECT_DIR$/src/css/bootstrap.min.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/comcreate.css" afterPath="$PROJECT_DIR$/src/css/comcreate.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/loaninvest.css" afterPath="$PROJECT_DIR$/src/css/loaninvest.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/login.css" afterPath="$PROJECT_DIR$/src/css/login.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/materialize.css" afterPath="$PROJECT_DIR$/src/css/materialize.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/singlecom.css" afterPath="$PROJECT_DIR$/src/css/singlecom.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/animation.js" afterPath="$PROJECT_DIR$/src/js/animation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/app.js" afterPath="$PROJECT_DIR$/src/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/bin/materialize.js" afterPath="$PROJECT_DIR$/src/js/bin/materialize.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/buttons.js" afterPath="$PROJECT_DIR$/src/js/buttons.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/cards.js" afterPath="$PROJECT_DIR$/src/js/cards.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/carousel.js" afterPath="$PROJECT_DIR$/src/js/carousel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/character_counter.js" afterPath="$PROJECT_DIR$/src/js/character_counter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/chips.js" afterPath="$PROJECT_DIR$/src/js/chips.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/collapsible.js" afterPath="$PROJECT_DIR$/src/js/collapsible.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/date_picker/picker.date.js" afterPath="$PROJECT_DIR$/src/js/date_picker/picker.date.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/date_picker/picker.js" afterPath="$PROJECT_DIR$/src/js/date_picker/picker.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/date_picker/picker.time.js" afterPath="$PROJECT_DIR$/src/js/date_picker/picker.time.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/dropdown.js" afterPath="$PROJECT_DIR$/src/js/dropdown.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/forms.js" afterPath="$PROJECT_DIR$/src/js/forms.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/global.js" afterPath="$PROJECT_DIR$/src/js/global.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/initial.js" afterPath="$PROJECT_DIR$/src/js/initial.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/jquery.easing.1.4.js" afterPath="$PROJECT_DIR$/src/js/jquery.easing.1.4.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/jquery.hammer.js" afterPath="$PROJECT_DIR$/src/js/jquery.hammer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/materialbox.js" afterPath="$PROJECT_DIR$/src/js/materialbox.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/materialize.js" afterPath="$PROJECT_DIR$/src/js/materialize.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/modal.js" afterPath="$PROJECT_DIR$/src/js/modal.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/parallax.js" afterPath="$PROJECT_DIR$/src/js/parallax.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/pushpin.js" afterPath="$PROJECT_DIR$/src/js/pushpin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/scrollFire.js" afterPath="$PROJECT_DIR$/src/js/scrollFire.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/scrollspy.js" afterPath="$PROJECT_DIR$/src/js/scrollspy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/sideNav.js" afterPath="$PROJECT_DIR$/src/js/sideNav.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/slider.js" afterPath="$PROJECT_DIR$/src/js/slider.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/tabs.js" afterPath="$PROJECT_DIR$/src/js/tabs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/tapTarget.js" afterPath="$PROJECT_DIR$/src/js/tapTarget.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/toasts.js" afterPath="$PROJECT_DIR$/src/js/toasts.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/tooltip.js" afterPath="$PROJECT_DIR$/src/js/tooltip.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/transitions.js" afterPath="$PROJECT_DIR$/src/js/transitions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/truffle-contract.js" afterPath="$PROJECT_DIR$/src/js/truffle-contract.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/waves.js" afterPath="$PROJECT_DIR$/src/js/waves.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/loancreate.html" afterPath="$PROJECT_DIR$/src/loancreate.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/loaninvest.html" afterPath="$PROJECT_DIR$/src/loaninvest.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/login.html" afterPath="$PROJECT_DIR$/src/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/signup.html" afterPath="$PROJECT_DIR$/src/signup.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/singlecom.html" afterPath="$PROJECT_DIR$/src/singlecom.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/truffle.js" afterPath="$PROJECT_DIR$/truffle.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,11 +72,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="WeLend.sol" pinned="false" current-in-tab="true">
+      <file leaf-file-name="WeLend.sol" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/contracts/WeLend.sol">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-639">
-              <caret line="86" column="23" lean-forward="true" selection-start-line="86" selection-start-column="23" selection-end-line="86" selection-end-column="23" />
+            <state relative-caret-position="1548">
+              <caret line="95" column="23" lean-forward="false" selection-start-line="95" selection-start-column="23" selection-end-line="95" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="56" column="57" lean-forward="true" selection-start-line="56" selection-start-column="57" selection-end-line="56" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -30,7 +96,7 @@
         <entry file="file://$PROJECT_DIR$/contracts/voting.sol">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="252">
-              <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="30" />
+              <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -55,6 +121,7 @@
         <option value="$PROJECT_DIR$/contracts/mortal.sol" />
         <option value="$PROJECT_DIR$/contracts/voting.sol" />
         <option value="$PROJECT_DIR$/contracts/WeLend.sol" />
+        <option value="$PROJECT_DIR$/src/js/app.js" />
       </list>
     </option>
   </component>
@@ -67,10 +134,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2" />
-    <option name="y" value="34" />
-    <option name="width" value="1364" />
-    <option name="height" value="736" />
+    <option name="y" value="-4" />
+    <option name="width" value="1366" />
+    <option name="height" value="772" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -97,7 +163,13 @@
             <path>
               <item name="we-lend" type="b2602c69:ProjectViewProjectNode" />
               <item name="we-lend" type="462c0819:PsiDirectoryNode" />
-              <item name="contracts" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="we-lend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="we-lend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -136,12 +208,12 @@
       <option name="presentableId" value="Default" />
       <updated>1504957603371</updated>
       <workItem from="1504957608507" duration="20244000" />
-      <workItem from="1504988980031" duration="15985000" />
+      <workItem from="1504988980031" duration="18161000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36229000" />
+    <option name="totallyTimeSpent" value="38405000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
@@ -149,6 +221,7 @@
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15739386" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -161,7 +234,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -196,6 +268,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -203,6 +276,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -217,15 +291,31 @@
     <entry file="file://$PROJECT_DIR$/contracts/voting.sol">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
-          <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="30" />
+          <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/migrations/1_initial_migration.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/contracts/WeLend.sol">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-639">
-          <caret line="86" column="23" lean-forward="true" selection-start-line="86" selection-start-column="23" selection-end-line="86" selection-end-column="23" />
+        <state relative-caret-position="1548">
+          <caret line="95" column="23" lean-forward="false" selection-start-line="95" selection-start-column="23" selection-end-line="95" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="56" column="57" lean-forward="true" selection-start-line="56" selection-start-column="57" selection-end-line="56" selection-end-column="57" />
           <folding />
         </state>
       </provider>

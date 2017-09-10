@@ -1,45 +1,45 @@
 body {
-	margin: 0;
-	font-family: 'Roboto Mono', monospace;
-	color: white;
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
 }
 
 #container {
-	display: flex;
-} 
+    display: flex;
+}
 
-.left {	
-	width: 40vw;
-	background: #151922;
-	height: 101vh;
+.left {
+    width: 40vw;
+    background: #151922;
+    height: 101vh;
 }
 
 .right {
-	background: #00A875;
-	flex-grow: 1;
+    background: #00A875;
+    flex-grow: 1;
 
 }
 
 .container70 {
-	margin-top: 40px;
-	padding-top: 100px;
-	width: 70%;
-	margin:auto;
+    margin-top: 40px;
+    padding-top: 100px;
+    width: 70%;
+    margin: auto;
 }
 
 #welcome {
-	
-	font-size: 40pt;
+
+    font-size: 40pt;
 }
 
 #paragraph {
-	
-	font-size: 13pt;
+
+    font-size: 13pt;
 }
 
-.buttonsign{
-	font-size: 13pt;
-	background-color: #00A875;
+.buttonsign {
+    font-size: 13pt;
+    background-color: #00A875;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -49,17 +49,17 @@ body {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-} 
-
-#formtitle {
-	padding-top: 50px;
-	font-size: 20pt;
 }
 
-.buttonlog{
-	
-	font-size: 13pt;
-	background-color: white;
+#formtitle {
+    padding-top: 50px;
+    font-size: 20pt;
+}
+
+.buttonlog {
+
+    font-size: 13pt;
+    background-color: white;
     border: none;
     color: #00A875;
     padding: 15px 32px;
@@ -69,7 +69,7 @@ body {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-} 
+}
 
 input[type=text] {
     width: 100%;

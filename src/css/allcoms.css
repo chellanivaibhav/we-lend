@@ -1,27 +1,27 @@
 body {
-	margin: 0;
-	font-family: 'Roboto Mono', monospace;
-	color: black;
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+    color: black;
 }
 
 #upper {
     height: 10vh;
     background: #00A875;
-    
+
 }
 
 #lower {
-    
+
     display: flex;
 }
 
-#container70{
+#container70 {
     width: 70%;
     margin: auto;
     display: flex;
 }
 
-#left{
+#left {
     width: 100%;
 }
 
@@ -30,8 +30,8 @@ body {
     padding-top: 10px;
 }
 
-.signout{
-    
+.signout {
+
     font-size: 9pt;
     color: white;
     background-color: #00A875;
@@ -43,7 +43,7 @@ body {
     display: inline-block;
     margin: 4px 2px;
     cursor: pointer;
-} 
+}
 
 .tagline {
     color: black;
@@ -52,7 +52,7 @@ body {
     font-size: 15pt;
 }
 
-.container72{
+.container72 {
     padding-top: 50px;
     width: 40%;
     margin: auto;
@@ -69,15 +69,15 @@ body {
 .cards {
     display: grid;
     padding: 20px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 60px;
-  align-items: stretch;
-  justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 60px;
+    align-items: stretch;
+    justify-items: center;
 }
 
 .cards img {
-  border: none;
-  max-width: 100%;
+    border: none;
+    max-width: 100%;
 }
 
 #lower {

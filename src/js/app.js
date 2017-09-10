@@ -42,7 +42,7 @@ initContract: function() {
   // Get the necessary contract artifact file and instantiate it with truffle-contract.
   var LendArtifact = data;
   App.contracts.Lend = TruffleContract(LendArtifact);
-  
+
   // Set the provider for our contract.
   App.contracts.Lend.setProvider(App.web3Provider);
 
@@ -60,7 +60,7 @@ bindEvents: function() {
 handleAdopt: function() {
   event.preventDefault();
   var adoptionInstance;
-  
+
   web3.eth.getAccounts(function(error, accounts) {
     if (error) {
       console.log(error);
@@ -106,3 +106,4 @@ $(function() {
     App.init();
   });
 });
+

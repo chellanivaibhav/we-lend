@@ -1,22 +1,23 @@
 pragma solidity ^0.4.0;
 
+
 contract Ballot {
     struct Voter {
-        bool voted;  // if true, that person already voted
-        uint vote;   // index of the voted proposal
+    bool voted;  // if true, that person already voted
+    uint vote;   // index of the voted proposal
     }
 
     // This is a type for a single proposal.
     struct Proposal {
-        bytes32 name;   // short name (up to 32 bytes)
-        uint voteCount; // number of accumulated votes
+    bytes32 name;   // short name (up to 32 bytes)
+    uint voteCount; // number of accumulated votes
     }
 
     address public chairperson;
 
     // This declares a state variable that
     // stores a `Voter` struct for each possible address.
-    mapping(address => Voter) public voters;
+    mapping (address => Voter) public voters;
 
     // A dynamically-sized array of `Proposal` structs.
     Proposal[] public proposals;
@@ -24,7 +25,7 @@ contract Ballot {
     /// Create a new ballot to choose one of `proposalNames`.
     function Ballot(bytes32[] proposalNames) {
         chairperson = msg.sender;
-    voters[chairperson] = Voter({voted: false, vote: 999});
+        voters[chairperson] = Voter({voted : false, vote : 999});
 
         // For each of the provided proposal names,
         // create a new proposal object and add it
@@ -34,13 +35,13 @@ contract Ballot {
             // Proposal object and `proposals.push(...)`
             // appends it to the end of `proposals`.
             proposals.push(Proposal({
-                name: proposalNames[i],
-                voteCount: 0
+            name : proposalNames[i],
+            voteCount : 0
             }));
         }
     }
-    
-     // Give `voter` the right to vote on this ballot.
+
+    // Give `voter` the right to vote on this ballot.
     // May only be called by `chairperson`.
     function giveRightToVote(address voter) {
         if (msg.sender != chairperson || voters[voter].voted) {
@@ -51,7 +52,7 @@ contract Ballot {
             // will also consume all provided gas.
             throw;
         }
-    voters[voter] = Voter({voted: false, vote: 999});
+        voters[voter] = Voter({voted : false, vote : 999});
     }
 
 
@@ -60,7 +61,7 @@ contract Ballot {
     function vote(uint proposal) {
         Voter sender = voters[msg.sender];
         if (sender.voted)
-            throw;
+        throw;
         sender.voted = true;
         sender.vote = proposal;
 
@@ -73,7 +74,7 @@ contract Ballot {
     /// @dev Computes the winning proposal taking all
     /// previous votes into account.
     function winningProposal() constant
-            returns (uint winningProposal)
+    returns (uint winningProposal)
     {
         uint winningVoteCount = 0;
         for (uint p = 0; p < proposals.length; p++) {
@@ -88,7 +89,7 @@ contract Ballot {
     // of the winner contained in the proposals array and then
     // returns the name of the winner
     function winnerName() constant
-            returns (bytes32 winnerName){
+    returns (bytes32 winnerName){
         winnerName = proposals[winningProposal()].name;
     }
 }
